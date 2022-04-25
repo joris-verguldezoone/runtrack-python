@@ -22,26 +22,8 @@ class Personne:
         self.nom = nom
         self.prenom = prenom
 
-class Auteur(Personne):
-    def __init__(self,oeuvre):
-        self.oeuvre = oeuvre
 
-    def listerOeuvre(self):
-        for livre in self.oeuvre:
-            print(livre)
 
-    def ecrireUnLivre(self,titre,auteur):
-        obj = Livre(titre,auteur)
-        self.oeuvre.append(obj)
-        self.titre = titre 
-        
-class Livre:
-    def __init__(self, titre, Auteur):
-        self.titre = titre
-        self.Auteur = Auteur
-    
-    def print(self):
-        print(self.titre)
 
 auteur = Auteur(['MathisSportCollection', 'Le levé de mathis'])
 livre = Livre("Adrien et les septs nains",'Jojjj')
